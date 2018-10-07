@@ -785,7 +785,7 @@ Wire Wire Line
 Wire Wire Line
 	1875 2400 1800 2400
 Text Label 8250 4700 0    40   ~ 0
-PA10
+PC4
 Text Label 8250 5300 0    40   ~ 0
 PB8
 Text Label 8250 5700 0    40   ~ 0
