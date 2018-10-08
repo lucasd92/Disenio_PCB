@@ -75,12 +75,12 @@ F 12 "~" H 7025 4175 60  0001 C CNN "Notes"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Arduino_Uno_R3_From_Scratch-rescue:BARREL_JACK CON1
+L Connector:Barrel_Jack_MountingPin CON1
 U 1 1 55CD027B
 P 3725 3775
 F 0 "CON1" H 3725 4025 60  0000 C CNN
 F 1 "BARREL_JACK" H 3725 3575 60  0000 C CNN
-F 2 "footprints:barrel jack" H 3725 3775 60  0001 C CNN
+F 2 "footprints:dc_socket" H 3725 3775 60  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/6941xx106102.pdf" H 3725 3775 60  0001 C CNN
 F 4 "CONN PWR JACK DC RA SMD	" H 3725 3775 60  0001 C CNN "Characteristics"
 F 5 "9V Barrel Jack" H 3725 3775 60  0001 C CNN "Description"
@@ -92,7 +92,7 @@ F 10 "N" H 3725 3775 60  0001 C CNN "Critical"
 F 11 "Voltage_Reg" H 3725 3775 60  0001 C CNN "Subsystem"
 F 12 "Any sub must match footprint" H 3725 3775 60  0001 C CNN "Notes"
 	1    3725 3775
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Text Notes 3725 2850 0    60   ~ 0
 Barrel Plug must be 2.1mm ID x 5.5mm OD
@@ -210,14 +210,11 @@ Wire Wire Line
 Wire Wire Line
 	4225 3675 4225 3775
 Wire Wire Line
-	4025 3775 4225 3775
-Connection ~ 4225 3775
-Wire Wire Line
 	4850 3775 5075 3775
 Wire Wire Line
 	5275 3775 5275 4025
 Wire Wire Line
-	4025 3875 4225 3875
+	4025 3875 4050 3875
 Wire Wire Line
 	4225 3875 4225 4525
 Wire Wire Line
@@ -352,4 +349,25 @@ Wire Wire Line
 	6475 3775 6625 3775
 Wire Wire Line
 	5075 3775 5275 3775
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5BBDB1E1
+P 5295 3325
+F 0 "#FLG0101" H 5295 3400 50  0001 C CNN
+F 1 "PWR_FLAG" H 5295 3499 50  0000 C CNN
+F 2 "" H 5295 3325 50  0001 C CNN
+F 3 "~" H 5295 3325 50  0001 C CNN
+	1    5295 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5075 3325 5295 3325
+Connection ~ 5075 3325
+Wire Wire Line
+	3725 4075 4050 4075
+Wire Wire Line
+	4050 4075 4050 3875
+Connection ~ 4050 3875
+Wire Wire Line
+	4050 3875 4225 3875
 $EndSCHEMATC

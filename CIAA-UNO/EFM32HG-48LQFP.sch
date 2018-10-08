@@ -820,4 +820,48 @@ Text Label 8325 750  0    40   ~ 0
 nRESET
 Wire Wire Line
 	8325 750  9350 750 
+NoConn ~ 3650 2650
+NoConn ~ 3750 2650
+NoConn ~ 4050 2650
+NoConn ~ 4150 2650
+NoConn ~ 4250 2650
+NoConn ~ 2650 3450
+NoConn ~ 2650 3550
+NoConn ~ 2650 3650
+NoConn ~ 3850 5350
+NoConn ~ 4250 5350
+NoConn ~ 5350 3850
+$Comp
+L Mechanical:MountingHole F1
+U 1 1 5BBE0C63
+P 1790 5155
+F 0 "F1" H 1890 5201 50  0000 L CNN
+F 1 "Fiducial" H 1890 5110 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1790 5155 50  0001 C CNN
+F 3 "~" H 1790 5155 50  0001 C CNN
+	1    1790 5155
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole F2
+U 1 1 5BBE0D63
+P 1790 5535
+F 0 "F2" H 1890 5581 50  0000 L CNN
+F 1 "Fiducial" H 1890 5490 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1790 5535 50  0001 C CNN
+F 3 "~" H 1790 5535 50  0001 C CNN
+	1    1790 5535
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole F3
+U 1 1 5BBE0E5E
+P 1790 5895
+F 0 "F3" H 1890 5941 50  0000 L CNN
+F 1 "Fiducial" H 1890 5850 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1790 5895 50  0001 C CNN
+F 3 "~" H 1790 5895 50  0001 C CNN
+	1    1790 5895
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

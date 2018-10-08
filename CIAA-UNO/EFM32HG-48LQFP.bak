@@ -785,7 +785,7 @@ Wire Wire Line
 Wire Wire Line
 	1875 2400 1800 2400
 Text Label 8250 4700 0    40   ~ 0
-PA10
+PC4
 Text Label 8250 5300 0    40   ~ 0
 PB8
 Text Label 8250 5700 0    40   ~ 0
@@ -820,4 +820,51 @@ Text Label 8325 750  0    40   ~ 0
 nRESET
 Wire Wire Line
 	8325 750  9350 750 
+$Comp
+L Mechanical:MountingHole_Pad F1
+U 1 1 5BBABE26
+P 1250 5225
+F 0 "F1" H 1350 5276 50  0000 L CNN
+F 1 "Fiducial" H 1350 5185 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1250 5225 50  0001 C CNN
+F 3 "~" H 1250 5225 50  0001 C CNN
+	1    1250 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad F2
+U 1 1 5BBABEF1
+P 1250 5700
+F 0 "F2" H 1350 5751 50  0000 L CNN
+F 1 "Fiducial" H 1350 5660 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1250 5700 50  0001 C CNN
+F 3 "~" H 1250 5700 50  0001 C CNN
+	1    1250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad F3
+U 1 1 5BBABFBD
+P 1250 6200
+F 0 "F3" H 1350 6251 50  0000 L CNN
+F 1 "Fiducial" H 1350 6160 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1250 6200 50  0001 C CNN
+F 3 "~" H 1250 6200 50  0001 C CNN
+	1    1250 6200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 2650
+NoConn ~ 3750 2650
+NoConn ~ 4050 2650
+NoConn ~ 4150 2650
+NoConn ~ 4250 2650
+NoConn ~ 2650 3450
+NoConn ~ 2650 3550
+NoConn ~ 2650 3650
+NoConn ~ 3850 5350
+NoConn ~ 4250 5350
+NoConn ~ 5350 3850
+NoConn ~ 1250 5325
+NoConn ~ 1250 5800
+NoConn ~ 1250 6300
 $EndSCHEMATC

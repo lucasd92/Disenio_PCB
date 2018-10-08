@@ -1,27 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Arduino_Uno_R3_From_Scratch-rescue:BARREL_JACK
-#
-DEF Arduino_Uno_R3_From_Scratch-rescue:BARREL_JACK CON 0 40 Y Y 1 F N
-F0 "CON" 0 250 60 H V C CNN
-F1 "Arduino_Uno_R3_From_Scratch-rescue:BARREL_JACK" 0 -200 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-A -300 99 49 -900 1788 0 1 0 N -300 50 -350 100
-A -300 101 49 900 -1788 0 1 0 N -300 150 -350 100
-S 100 150 0 50 0 1 0 N
-P 2 0 1 0 -300 50 0 50 N
-P 2 0 1 0 0 150 -300 150 N
-P 3 0 1 0 100 0 -50 0 -50 -100 N
-P 5 0 1 0 100 -100 -150 -100 -200 -50 -250 -100 -350 -100 N
-X ~ 1 300 100 200 L 50 50 1 1 P
-X ~ 2 300 -100 200 L 50 50 1 1 P
-X ~ 3 300 0 200 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Arduino_Uno_R3_From_Scratch-rescue:C
 #
 DEF Arduino_Uno_R3_From_Scratch-rescue:C C 0 10 N Y 1 F N
@@ -392,6 +371,46 @@ X Vin 1 0 0 0 U 20 20 0 0 W N
 ENDDRAW
 ENDDEF
 #
+# Connector:Barrel_Jack_MountingPin
+#
+DEF Connector:Barrel_Jack_MountingPin J 0 20 Y N 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "Connector:Barrel_Jack_MountingPin" 50 -250 50 H V L CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+$FPLIST
+ BarrelJack*
+$ENDFPLIST
+DRAW
+A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
+A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
+T 0 0 -165 15 0 1 1 Mounting Normal 0 C C
+S -200 150 200 -150 0 1 10 f
+S 145 125 -130 75 0 1 10 F
+P 2 0 1 10 200 100 150 100 N
+P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
+P 2 1 1 6 -40 -180 40 -180 N
+X ~ 1 300 100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
+X MountPin MP 0 -300 120 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical:MountingHole
+#
+DEF Mechanical:MountingHole MH 0 40 Y Y 1 F N
+F0 "MH" 0 200 50 H V C CNN
+F1 "Mechanical:MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # ciaa-z3r0:C_Small
 #
 DEF ciaa-z3r0:C_Small C 0 10 N N 1 F N
@@ -608,6 +627,19 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:PWR_FLAG
+#
+DEF power:PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power:PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
