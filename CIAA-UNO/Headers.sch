@@ -6,13 +6,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
 Title "CIAA-UNO"
-Date "2018-09-23"
-Rev "0"
+Date "2018-11-18"
+Rev "2"
 Comp "Lucas Dórdolo"
-Comment1 "Based on the Arduino UNO and CIAA z3r0"
-Comment2 ""
+Comment1 ""
+Comment2 "Based on the Arduino UNO and CIAA z3r0"
 Comment3 ""
-Comment4 ""
+Comment4 "Copyright 2018,  Lucas Dórdolo (see LICENSE)"
 $EndDescr
 $Comp
 L Arduino_Uno_R3_From_Scratch-rescue:CONN_01X08 P1

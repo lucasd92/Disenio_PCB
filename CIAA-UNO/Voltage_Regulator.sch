@@ -6,13 +6,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
 Title "CIAA-UNO"
-Date "2018-09-23"
-Rev "0"
+Date "2018-11-18"
+Rev "2"
 Comp "Lucas Dórdolo"
-Comment1 "Based on the Arduino UNO and CIAA z3r0"
-Comment2 "All mention of the Arduino name and brand should be associated with them, not me."
+Comment1 ""
+Comment2 "Based on the Arduino UNO and CIAA z3r0"
 Comment3 ""
-Comment4 ""
+Comment4 "Copyright 2018,  Lucas Dórdolo (see LICENSE)"
 $EndDescr
 $Comp
 L Arduino_Uno_R3_From_Scratch-rescue:D D1
@@ -79,7 +79,7 @@ L Connector:Barrel_Jack_MountingPin CON1
 U 1 1 55CD027B
 P 3725 3775
 F 0 "CON1" H 3725 4025 60  0000 C CNN
-F 1 "BARREL_JACK" H 3725 3575 60  0000 C CNN
+F 1 "BARREL_JACK" H 3730 3395 60  0000 C CNN
 F 2 "footprints:dc_socket" H 3725 3775 60  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/6941xx106102.pdf" H 3725 3775 60  0001 C CNN
 F 4 "CONN PWR JACK DC RA SMD	" H 3725 3775 60  0001 C CNN "Characteristics"

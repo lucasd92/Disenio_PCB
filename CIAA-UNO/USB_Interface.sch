@@ -6,13 +6,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title "CIAA-UNO"
-Date "2018-09-23"
-Rev "0"
+Date "2018-11-18"
+Rev "2"
 Comp "Lucas Dórdolo"
-Comment1 "Based on the Arduino UNO and CIAA z3r0"
-Comment2 ""
+Comment1 ""
+Comment2 "Based on the Arduino UNO and CIAA z3r0"
 Comment3 ""
-Comment4 ""
+Comment4 "Copyright 2018,  Lucas Dórdolo (see LICENSE)"
 $EndDescr
 $Comp
 L ciaa-z3r0:USB_OTG J?
@@ -107,8 +107,6 @@ Wire Wire Line
 	6300 3525 6350 3525
 Wire Wire Line
 	6950 3275 6850 3275
-Wire Wire Line
-	6850 3275 6850 3150
 Text HLabel 4825 3425 0    50   Input ~ 0
 USB_RD+
 Text HLabel 4825 3625 0    50   Input ~ 0
@@ -116,12 +114,12 @@ USB_RD-
 $Comp
 L Arduino_Uno_R3_From_Scratch:USBVCC #PWR027
 U 1 1 5BA6AA29
-P 6850 3150
-F 0 "#PWR027" H 6850 3240 20  0001 C CNN
-F 1 "USBVCC" H 6846 3288 30  0000 C CNN
-F 2 "" H 6850 3150 60  0000 C CNN
-F 3 "" H 6850 3150 60  0000 C CNN
-	1    6850 3150
+P 6850 2870
+F 0 "#PWR027" H 6850 2960 20  0001 C CNN
+F 1 "USBVCC" H 6846 3008 30  0000 C CNN
+F 2 "" H 6850 2870 60  0000 C CNN
+F 3 "" H 6850 2870 60  0000 C CNN
+	1    6850 2870
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -165,19 +163,16 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5BBDCF39
-P 6540 3140
-F 0 "#FLG0102" H 6540 3215 50  0001 C CNN
-F 1 "PWR_FLAG" H 6540 3314 50  0000 C CNN
-F 2 "" H 6540 3140 50  0001 C CNN
-F 3 "~" H 6540 3140 50  0001 C CNN
-	1    6540 3140
+P 6535 2910
+F 0 "#FLG0102" H 6535 2985 50  0001 C CNN
+F 1 "PWR_FLAG" H 6535 3084 50  0000 C CNN
+F 2 "" H 6535 2910 50  0001 C CNN
+F 3 "~" H 6535 2910 50  0001 C CNN
+	1    6535 2910
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 3275 6540 3275
-Wire Wire Line
-	6540 3275 6540 3140
-Connection ~ 6850 3275
+	6535 3045 6535 2910
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5BBDE497
@@ -196,4 +191,11 @@ Wire Wire Line
 Connection ~ 7375 3950
 Wire Wire Line
 	7375 3950 7705 3950
+Wire Wire Line
+	6535 3045 6850 3045
+Wire Wire Line
+	6850 2870 6850 3045
+Connection ~ 6850 3045
+Wire Wire Line
+	6850 3045 6850 3275
 $EndSCHEMATC
